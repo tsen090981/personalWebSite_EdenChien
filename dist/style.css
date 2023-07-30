@@ -460,6 +460,11 @@ section.contact .hand a {
   position: relative;
   display: inline-block;
   z-index: 2;
+}
+section.contact .hand a img {
+  margin-left: 0;
+}
+section.contact .hand a, section.contact .hand a img {
   transition: 0.5s;
 }
 section.contact .hand .deco {
@@ -468,9 +473,17 @@ section.contact .hand .deco {
   bottom: -65%;
   right: -10%;
   max-width: 65%;
+  transition: 0.5s;
 }
 section.contact .hand:hover a {
   transform: rotate(-5deg);
+}
+section.contact .hand:hover a img {
+  margin-left: -5%;
+}
+section.contact .hand:hover .deco {
+  transform: rotate(10deg);
+  right: -20%;
 }
 
 footer {

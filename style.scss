@@ -467,7 +467,12 @@ section.contact{
             position: relative;
             display: inline-block;
             z-index: 2;
-            transition: .5s;
+            img{
+                margin-left: 0;
+            }
+            &, & img{
+                transition: .5s;
+            }
         }
         .deco{
             z-index: 1;
@@ -475,10 +480,18 @@ section.contact{
             bottom: -65%;
             right: -10%;
             max-width: 65%;
+            transition: .5s;
         }
         &:hover{
             a{
                 transform: rotate(-5deg);
+                img{
+                    margin-left: -5%;
+                }
+            }
+            .deco{
+                transform: rotate(10deg);
+                right: -20%;
             }
         }
     }
