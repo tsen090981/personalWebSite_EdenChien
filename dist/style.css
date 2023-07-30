@@ -180,7 +180,7 @@ section.kv .deco_block {
 section.kv .deco_line {
   position: absolute;
   bottom: 64px;
-  left: 68px;
+  left: 8px;
   width: 1px;
   height: 76px;
   background-color: #5e5e5e;
@@ -746,6 +746,11 @@ footer p {
     font-size: 20px;
     letter-spacing: 2px;
     margin-bottom: 236px;
+  }
+  section.kv .kv_deco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   section.kv .text {
     font-weight: 200;
