@@ -135,11 +135,19 @@ nav.navbar ul li a:hover {
 }
 
 section.kv {
+  height: 100vh;
   position: relative;
   background-image: url(https://github.com/tsen090981/personalWebSite_EdenChien/blob/main/images/bg1.jpg?raw=true);
   background-size: cover;
   background-position: center center;
   padding: 300px 0px 0px 0px;
+}
+section.kv .container {
+  height: 100%;
+}
+section.kv .container .deco2 {
+  position: absolute;
+  bottom: 0;
 }
 section.kv h1 {
   position: relative;
@@ -455,6 +463,7 @@ section.contact .deco {
 }
 
 footer {
+  z-index: 1000;
   background-color: #1c1c1c;
   padding: 10px 0px;
 }
