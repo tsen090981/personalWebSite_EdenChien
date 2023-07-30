@@ -69,6 +69,7 @@ img {
 * {
   font-family: "Noto Sans TC", sans-serif;
   font-family: "Poppins", sans-serif;
+  user-select: none;
 }
 
 html {
@@ -141,6 +142,8 @@ section.kv {
   padding: 300px 0px 0px 0px;
 }
 section.kv h1 {
+  position: relative;
+  left: -7px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 150px;
@@ -345,7 +348,6 @@ section.work .container ul {
   box-sizing: border-box;
 }
 section.work .container ul li.work_item {
-  cursor: pointer;
   position: relative;
   box-sizing: border-box;
   max-width: calc((100% - 48px) / 3);
@@ -743,6 +745,7 @@ footer p {
     margin-bottom: 12px;
   }
   section.kv h5 {
+    left: auto;
     font-size: 20px;
     letter-spacing: 2px;
     margin-bottom: 236px;
