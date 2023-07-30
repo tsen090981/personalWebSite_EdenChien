@@ -688,6 +688,10 @@ footer p {
     display: block;
   }
 
+  .container {
+    padding: 0px 30px;
+  }
+
   nav.navbar {
     width: 100vw;
     position: fixed;
@@ -858,7 +862,7 @@ footer p {
     order: 0;
     position: relative;
     width: 100vw;
-    padding: 100px 60px;
+    padding: 100px 36px;
   }
   .page .show_con .back_btn {
     position: fixed;

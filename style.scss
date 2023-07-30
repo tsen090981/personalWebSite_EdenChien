@@ -713,6 +713,9 @@ footer{
     .SM_only{
         display: block;
     }
+    .container{
+        padding: 0px 30px;
+    }
     nav.navbar{
         width: 100vw;
         position: fixed;
@@ -882,7 +885,7 @@ footer{
             order: 0;
             position: relative;
             width: 100vw;
-            padding: 100px 60px;
+            padding: 100px 36px;
             .back_btn{
                 position: fixed;
                 right: 16px;
