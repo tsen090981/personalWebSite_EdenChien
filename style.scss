@@ -59,7 +59,6 @@ table {
 img{
   width: 100%;
   height: auto;
-
   vertical-align: top;
 }
 
@@ -132,11 +131,19 @@ nav.navbar{
     background-color: rgba( #ffffff, $alpha: 0.9);
 }
 section.kv{
+    height: 100vh;
     position: relative;
     background-image: url(https://github.com/tsen090981/personalWebSite_EdenChien/blob/main/images/bg1.jpg?raw=true);
     background-size: cover;
     background-position: center center;
     padding: 300px 0px 0px 0px;
+    .container{
+        height: 100%;
+        .deco2{
+            position: absolute;
+            bottom: 0;
+        }
+    }
     h1{
         position: relative;
         left: -7px;
@@ -464,6 +471,7 @@ section.contact{
     }
 }
 footer{
+    z-index: 1000;
     background-color: $color_main_l;
     padding: 10px 0px;
     p{
