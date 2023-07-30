@@ -446,6 +446,7 @@ section.work .container ul li.work_item_four .work_pic {
 }
 
 section.contact {
+  overflow: hidden;
   position: relative;
   padding: 40px 0px 0px 0px;
   background-color: #e3e3e3;
@@ -453,16 +454,27 @@ section.contact {
 section.contact .hand {
   position: relative;
   max-width: 75%;
-  z-index: 1;
+  bottom: -15px;
 }
-section.contact .deco {
+section.contact .hand a {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+  transition: 0.5s;
+}
+section.contact .hand .deco {
+  z-index: 1;
   position: absolute;
-  bottom: 0;
-  right: 20%;
-  max-width: 43%;
+  bottom: -65%;
+  right: -10%;
+  max-width: 65%;
+}
+section.contact .hand:hover a {
+  transform: rotate(-5deg);
 }
 
 footer {
+  position: relative;
   z-index: 1000;
   background-color: #1c1c1c;
   padding: 10px 0px;
@@ -860,12 +872,13 @@ footer p {
     padding: 0px;
   }
   section.contact .hand {
-    left: -60px;
-    max-width: 650px;
+    max-width: initial;
+    left: -113px;
+    bottom: 0;
+    width: 465px;
   }
-  section.contact .deco {
-    right: 5%;
-    max-width: 65%;
+  section.contact .hand .deco {
+    bottom: -60%;
   }
 
   .page {

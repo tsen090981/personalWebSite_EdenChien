@@ -455,22 +455,36 @@ section.work{
     }
 }
 section.contact{
+    overflow: hidden;
     position: relative;
     padding: 40px 0px 0px 0px;
     background-color: $color_main_s;
     .hand{
         position: relative;
         max-width: 75%;
-        z-index: 1;
-    }
-    .deco{
-        position: absolute;
-        bottom: 0;
-        right: 20%;
-        max-width: 43%;
+        bottom: -15px;
+        a{
+            position: relative;
+            display: inline-block;
+            z-index: 2;
+            transition: .5s;
+        }
+        .deco{
+            z-index: 1;
+            position: absolute;
+            bottom: -65%;
+            right: -10%;
+            max-width: 65%;
+        }
+        &:hover{
+            a{
+                transform: rotate(-5deg);
+            }
+        }
     }
 }
 footer{
+    position: relative;
     z-index: 1000;
     background-color: $color_main_l;
     padding: 10px 0px;
@@ -883,13 +897,15 @@ footer{
             padding: 0px;
         }
         .hand{
-            left: -60px;
-            max-width: 650px;
+            max-width: initial;
+            left: -113px;
+            bottom: 0;
+            width: 465px;
+            .deco{
+                bottom: -60%;
+            }
         }
-        .deco{
-            right: 5%;
-            max-width: 65%;
-        }
+        
     }
     .page{
         position: relative;
