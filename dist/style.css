@@ -140,7 +140,7 @@ section.kv {
   background-image: url(https://github.com/tsen090981/personalWebSite_EdenChien/blob/main/images/bg1.jpg?raw=true);
   background-size: cover;
   background-position: center center;
-  padding: 300px 0px 0px 0px;
+  padding: 30vh 0px 0px 0px;
 }
 section.kv .container {
   height: 100%;
@@ -148,6 +148,11 @@ section.kv .container {
 section.kv .container .deco2 {
   position: absolute;
   bottom: 0;
+}
+@media screen and (max-height: 800px) {
+  section.kv .container .deco2 {
+    display: none;
+  }
 }
 section.kv h1 {
   position: relative;
