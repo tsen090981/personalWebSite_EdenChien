@@ -201,7 +201,7 @@ section.kv{
 }
 section.about{
     position: relative;
-    padding: 100px 0px 55px 0px;
+    padding: 120px 0px 64px 0px;
     background-color: $color_main_s;
     &::after{
         position: absolute;
@@ -217,14 +217,14 @@ section.about{
     .person{
         position: absolute;
         right: 20px;
-        top: 20px;
+        top: 48px;
         width: 25%;
         z-index: 10;
     }
     .content{
         position: relative;
         max-width: 75%;
-        padding: 40px 48px;
+        padding: 50px 48px;
         background-image: url(https://github.com/tsen090981/personalWebSite_EdenChien/blob/main/images/about_bg.png?raw=true);
         background-size: cover;
         
@@ -250,6 +250,7 @@ section.about{
             margin-bottom: 24px;
         }
         ul.detail{
+            margin-top: 36px;
             li.all{
                 width: 33.3%;
                 .title{
